@@ -1,0 +1,17 @@
+<style>
+  div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+  img {
+    background-color: red;
+    height: 80px;
+    width: 50px;
+    display: block;
+    margin: auto;
+  }
+</style>
+<div></div>
+<img>
