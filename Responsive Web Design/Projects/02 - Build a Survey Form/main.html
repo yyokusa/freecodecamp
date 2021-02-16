@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
+    <title>Survey Page</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">The Grand Budapest Hotel Reserve Page</h1>
+            <p id="description">Thank you for choosing us.</p>
+        </header>
+
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name">
+                    <p class="question"><b>Name:</b></p>
+                </label>
+                <input class="form-control" id="name" type="text" name="name" placeholder="Your Name" required autofocus>
+            </div>
+            
+            <div>
+                <label id="email-label" for="email">
+                    <p class="question"><b>Email:</b></p>
+                </label>
+                <input class="form-control" id="email" type="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            
+            <div>
+                <label id="number-label" for="number">
+                    <p class="question"><b>How many days do you plan to stay? (1 - 30)</b></p>
+                </label>
+                <input class="form-control" id="number" type="number" name="number" placeholder="Days" min="1" max="30">
+            </div>
+            
+            
+            <div id="dropdown-div">
+                <label for="dropdown">
+                    <p class="question"><b>Please choose room type:</b></p>
+                </label>
+                <select class="form-control" name="rooms" id="dropdown">
+                    <option value="">Please choose an option</option>
+                    <option value="fancy-room">Fancy Room</option>
+                    <option value="economy-room">Standard Room</option>
+                    <option value="shared-room1">Shared Room First Option (4 persons)</option>
+                    <option value="shared-room2">Shared Room Second Option (8 persons)</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="question"><b>Will you bring your pet?</b></p>
+                <div class="radio-buttons">
+                    <input class="input-radio" type="radio" id="pet-none" name="pet" value="none"
+                         checked>
+                    <label for="pet-none" class="answer">No</label>
+                </div>
+                <div class="radio-buttons">
+                    <input class="input-radio" type="radio" id="pet-dog" name="pet" value="dog">
+                    <label for="pet-dog" class="answer">Dog</label>
+                </div>
+                <div class="radio-buttons">
+                    <input class="input-radio" type="radio" id="pet-cat" name="pet" value="cat">
+                    <label for="pet-cat" class="answer">Cat</label>
+                </div>
+            </div>
+
+            <div>
+                <p class="question"><b>Choose additional services:</b></p>
+                <div class="checkbox-items">
+                    <input type="checkbox" id="sauna" name="sauna"
+                    value="sauna" class="input-checkbox">
+                    <label for="sauna">Sauna</label>
+                </div>
+                <div class="checkbox-items">
+                    <input type="checkbox" id="pool" name="pool"
+                    value="pool" class="input-checkbox">
+                    <label for="pool">Pool</label>
+                </div>
+                
+            </div>
+
+            <div class="additional-info">
+                <label for="additional-info">
+                    <p class="question"><b>Let us know any additional information.</b></p>
+                </label>
+                <textarea id="additional-info-text" name="additional-info"
+                        rows="10" cols="45">
+                </textarea>
+            </div>
+            <button id="submit" class="submit-button" type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>Feb 15 2021, Yasin Yokus</p>
+    </footer>
+</body>
+</html>
