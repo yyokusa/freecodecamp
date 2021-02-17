@@ -1,30 +1,24 @@
 body {
     background-color: #FFFFFF;
 }
-main {
-    border: 5px solid rgb(54, 35, 99);
+main, header {
     padding: 10px;  
     text-align: center;
     font-size: 16px;
     margin-top: 80px;
 }
   
-header {
-    border: 3px solid green;
-}
 #image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
     height: auto;
-    border: 5px solid rgb(14, 125, 9);
 }
 
 figure {
     margin: auto;
     width: 50%;
-    border: 3px solid cyan;
     padding: 10px;
 }
 
@@ -32,7 +26,6 @@ figure {
 #tribute-info {
     width: 50%;
     margin: auto;
-    border: 5px solid rgb(124, 135, 99);
     padding: 10px;  
 }
 
