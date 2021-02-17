@@ -8,13 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
     <title>Survey Page</title>
 </head>
-<body>
-    <main>
-        <header>
-            <h1 id="title">The Grand Budapest Hotel Reserve Page</h1>
+<body class="text-center">
+    <div class="container">
+        <header class="header">
+            <h1 id="title">The Grand Budapest Hotel Reservation Page</h1>
             <p id="description">Thank you for choosing us.</p>
         </header>
-
         <form id="survey-form">
             <div>
                 <label id="name-label" for="name">
@@ -50,12 +49,12 @@
                     <option value="shared-room2">Shared Room Second Option (8 persons)</option>
                 </select>
             </div>
-
+    
             <div>
                 <p class="question"><b>Will you bring your pet?</b></p>
                 <div class="radio-buttons">
                     <input class="input-radio" type="radio" id="pet-none" name="pet" value="none"
-                         checked>
+                            checked>
                     <label for="pet-none" class="answer">No</label>
                 </div>
                 <div class="radio-buttons">
@@ -67,7 +66,7 @@
                     <label for="pet-cat" class="answer">Cat</label>
                 </div>
             </div>
-
+    
             <div>
                 <p class="question"><b>Choose additional services:</b></p>
                 <div class="checkbox-items">
@@ -82,20 +81,21 @@
                 </div>
                 
             </div>
-
+    
             <div class="additional-info">
                 <label for="additional-info">
-                    <p class="question"><b>Let us know any additional information.</b></p>
+                    <p class="question"><b>Let us know any additional requests.</b></p>
                 </label>
-                <textarea id="additional-info-text" name="additional-info"
-                        rows="10" cols="45">
-                </textarea>
+                <textarea 
+                id="additional-info-text" 
+                name="additional-info"
+                placeholder="Enter your request here..."></textarea>
             </div>
-            <button id="submit" class="submit-button" type="submit">Submit</button>
+            <button id="submit" class="submit-button text-center" type="submit">Submit</button>
         </form>
-    </main>
-    <footer>
-        <p>Feb 15 2021, Yasin Yokus</p>
-    </footer>
+        <footer>
+            <p>Feb 15 2021, Yasin Yokus</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,3 +1,12 @@
+/* :root can be useful for declaring global CSS variables: */
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+
 /* body {
     background-image: url("https://upload.wikimedia.org/wikipedia/tr/d/d0/Grand-Budapest-Hotel-02.jpg");
     background-color: #cccccc;
@@ -5,10 +14,15 @@
     background-size: cover;
     background-attachment: fixed; 
 } */
-body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
+
+/* https://www.w3schools.com/css/css3_box-sizing.asp */
+/* Applying this to all elements is safe and wise: */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
 /* mobile friendly alternative to using background-attachment: fixed */
 body::before {
     content: '';
@@ -30,10 +44,36 @@ body::before {
     background-position: center;
 }
 
-
-main {
+.text-center {
     text-align: center;
 }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
 
 #title {
     color: rgb(258, 204, 212);
@@ -45,12 +85,9 @@ main {
 /* one way for centering block elements*/
 #survey-form {
     background-color: rgba(46, 46, 74, 0.4);
-    /* height: 70%; */
     margin: auto;
     width: 50%;
-    /* border: 1px solid green; */
     padding: 50px;
-
     font-size: 22px;
     display: grid;
     grid-template-columns: 100%;
@@ -101,6 +138,7 @@ textarea {
     padding: 0.625rem;
     resize: vertical;
     overflow: scroll; /* not necessary */
+    color: #495057;
 }
 
 .form-control {
@@ -136,10 +174,10 @@ textarea {
 
 #submit {
     background-color: rgb(55, 175, 101);
+    width: 100%;
     border: none;
     color: #f8edeb;
     padding: 5px;
-    text-align: center;
     text-decoration: none;
     display: block;
     font-size: 16px;
@@ -158,4 +196,23 @@ footer {
     padding: 0.1rem;
     text-align: right;
     background-color: rgba(232, 232, 228, 0.6);
+}
+
+
+
+button {
+    border: none;
+}
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+#description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
 }
